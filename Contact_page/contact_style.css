@@ -1,0 +1,154 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width:100%; 
+  background:black;
+  font-family: 'Montserrat';
+}
+
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.contact_me { 
+	font: bold 2em monospace;
+  font-family:'Montserrat';
+  margin: 40px auto 40px auto;
+   color: #A9A9A9;
+	border-right: .1em solid #A9A9A9;
+	width: calc(0.55em * 9.5); 
+	width: 9.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 1.5s steps(10, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+
+
+form {
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:60px;
+  
+  margin: 120px 450px;
+  margin-bottom:10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  position:relative;
+  z-index:1;
+ 
+}
+
+form > div{
+  position:absolute;
+  top:0;
+  left:50%;
+  padding:0 20px;
+  transform:translate(-50%,-50%);
+  background-color:black;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  text-align:center;
+}
+
+form > div > img{
+  filter:invert(1);
+  width:100px;
+}
+
+form > input,
+form > textarea {
+  padding: 12px;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  color: #ddd;
+  background-color: #222;
+  border-radius: 4px;
+  display: block;
+  width: 30vw;
+  font-family: 'Montserrat';
+  font-weight:bold;
+}
+
+form > textarea{
+  height:100px;
+  resize:none;
+}
+
+form > input[type="submit"] {
+  max-width: 20vw;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+form > input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+.myMail{
+    color:white;
+    text-align:center;
+    color: #C0C0C0;
+}
+.myMail p{
+   color: #C0C0C0;
+   font-weight:bold;
+   margin:10px;
+}
+.arrow{
+  font-size:40px;
+  margin:0;
+}
+
+.myMail h2{
+  margin-top:100px;
+  margin-bottom:10px;
+}
+
+
+@media (max-width:1400px){
+form {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    margin: 120px 250px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+ form > input, form > textarea {
+   width:200px;
+}
+}
+
+@media (max-width:800px){
+form {
+     margin: 120px 120px;
+}
+}
+@media (max-width:530px){
+form {
+     margin: 120px 50px;
+}
+}
+@media (max-width:380px){
+ form > input, form > textarea {
+   width:100px;
+}
+}
+
+
+
